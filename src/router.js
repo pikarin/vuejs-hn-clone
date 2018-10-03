@@ -12,6 +12,17 @@ export default new Router({
       component: Home
     },
     {
+      path: "/story/:id",
+      name: "single",
+      component: () =>
+        import(/* webpackChunkName: "single" */ "./views/Single.vue")
+    },
+    {
+      path: "/new",
+      name: "new",
+      component: () => import(/* webpackChunkName: "new" */ "./views/New.vue")
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting

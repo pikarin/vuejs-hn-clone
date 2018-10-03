@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <item v-for="story in stories" :key="story.id" :story="story" />
+    <item v-for="story in stories" :key="story" :story="story" />
   </div>
 </template>
 
@@ -13,12 +13,12 @@ export default {
   data() {
     return {
       err: "",
-      stories: this.$store.state.topStories
+      stories: this.$store.state.newStories
     };
   },
   created() {
-    if (this.$store.state.topStories.length === 0) {
-      this.$store.dispatch("fetch_top_stories");
+    if (this.$store.state.newStories.length === 0) {
+      this.$store.dispatch("fetch_new_stories");
     }
   }
 };
