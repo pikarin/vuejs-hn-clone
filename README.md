@@ -1,4 +1,5 @@
-# hn-clone
+# Hacker News Clone
+From TutorialEdge.net. [https://tutorialedge.net/projects/hacker-news-clone-vuejs/](https://tutorialedge.net/projects/hacker-news-clone-vuejs/)
 
 ## Project setup
 ```
@@ -13,11 +14,6 @@ yarn run serve
 ### Compiles and minifies for production
 ```
 yarn run build
-```
-
-### Run your tests
-```
-yarn run test
 ```
 
 ### Lints and fixes files
